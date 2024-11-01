@@ -16,6 +16,12 @@
     gap: 60px;
 }
 
-..navbar-left img {
+.navbar-left img {
     width: 90px;
+}
+
+.navbar-left ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
