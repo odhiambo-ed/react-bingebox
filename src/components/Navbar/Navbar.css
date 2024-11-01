@@ -35,3 +35,8 @@
     align-items: center;
     gap: 20px;
 }
+
+.navbar-right .icons {
+    width: 30px;
+    cursor: pointer;
+}
