@@ -7,3 +7,10 @@
     mask-image: linear-gradient(to right, transparent, black, 75%);
     --weblit-mask-image: linear-gradient(to right, transparent, black, 75%);
 }
+
+.hero-content {
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+}
