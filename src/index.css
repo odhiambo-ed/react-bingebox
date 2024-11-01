@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,5 @@
 body {
   background-color: black;
   color: white;
+  font-family: "Rubik", sans-serif;
 }
