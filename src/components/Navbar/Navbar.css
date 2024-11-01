@@ -29,3 +29,9 @@
 .navbar-left ul li {
     cursor: pointer;
 }
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
