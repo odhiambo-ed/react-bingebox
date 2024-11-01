@@ -1,6 +1,7 @@
 import Navbar from '../../components/Navbar/Navbar'
 import HeroBanner from '../../assets/hero_banner.jpg';
 import HeroTitle from '../../assets/hero_title.png';
+import './Home.css';
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
           <p>
             Discover his ties to a secret ancient order, a young man living in a
             modern Istabul embarks on a quest to save the city from an immortal
-            enemy.{" "}
+            enemy.
           </p>
         </div>
       </div>
