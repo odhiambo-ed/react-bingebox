@@ -13,4 +13,9 @@
 .navbar-left {
     display: flex;
     align-items: center;
+    gap: 60px;
+}
+
+..navbar-left img {
+    width: 90px;
 }
