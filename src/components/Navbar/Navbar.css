@@ -40,3 +40,8 @@
     width: 30px;
     cursor: pointer;
 }
+
+.navbar-right .profile {
+    width: 40px;
+    border-radius: 5px;
+}
