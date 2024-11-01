@@ -56,3 +56,11 @@
     color: #fff;
     background: #6d6d6eb3;
 }
+
+.hero-button .btn.dark-btn:hover {
+    background: #6d6d6e66;
+}
+
+.hero-button .btn:hover {
+    background: #ffffffbf;
+}
