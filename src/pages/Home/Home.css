@@ -33,3 +33,26 @@
     gap: 10px;
     margin-bottom: 50px;
 }
+
+.hero-button .btn img {
+    width: 25px;
+}
+
+.hero-button .btn {
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-button .btn.dark-btn {
+    color: #fff;
+    background: #6d6d6eb3;
+}
