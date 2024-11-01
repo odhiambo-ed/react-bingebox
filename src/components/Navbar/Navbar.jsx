@@ -3,6 +3,7 @@ import SearchIcon from '../../assets/search_icon.svg';
 import BellIcon from '../../assets/bell_icon.svg';
 import ProfileImg from '../../assets/profile_img.png';
 import CaretIcon from '../../assets/caret_icon.svg';
+import './Navbar.css';
 
 function Navbar() {
   return (
