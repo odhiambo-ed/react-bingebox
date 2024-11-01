@@ -1,0 +1,9 @@
+.hero {
+    position: relative;
+
+}
+.hero .banner-image img {
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black, 75%);
+    --weblit-mask-image: linear-gradient(to right, transparent, black, 75%);
+}
