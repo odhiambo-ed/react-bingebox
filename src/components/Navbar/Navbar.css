@@ -45,3 +45,9 @@
     width: 40px;
     border-radius: 5px;
 }
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
