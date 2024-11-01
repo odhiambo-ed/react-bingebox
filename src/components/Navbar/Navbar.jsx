@@ -1,6 +1,8 @@
 import Logo from '../../assets/logo.png';
 import SearchIcon from '../../assets/search_icon.svg';
 import BellIcon from '../../assets/bell_icon.svg';
+import ProfileImg from '../../assets/profile_img.png';
+import CaretIcon from '../../assets/caret_icon.svg';
 
 function Navbar() {
   return (
@@ -21,7 +23,8 @@ function Navbar() {
               <p>Children</p>
               <img src={BellIcon} alt="Bell Icon" className='icons' />
               <div className="navbar-profile">
-                  <img src={BellIcon} alt="Bell Icon" className='icons' />
+                  <img src={ProfileImg} alt="Profile Icon" className='profile' />
+                  <img src={CaretIcon} alt="Caret" />
               </div>
           </div>
     </div>
