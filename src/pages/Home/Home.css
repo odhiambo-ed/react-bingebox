@@ -1,11 +1,12 @@
 .hero {
     position: relative;
+    left: 0;
 
 }
-.hero .banner-image img {
+.banner-image {
     width: 100%;
-    mask-image: linear-gradient(to right, transparent, black, 75%);
-    --weblit-mask-image: linear-gradient(to right, transparent, black, 75%);
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    --weblit-mask-image: linear-gradient(to right, transparent, black 75%);
 }
 
 .hero-content {
@@ -13,4 +14,16 @@
     width: 100%;
     padding-left: 6%;
     bottom: 0;
+}
+
+.content-image {
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
 }
