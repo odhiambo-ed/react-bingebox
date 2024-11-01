@@ -50,4 +50,28 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar-right .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    background-color: #191919;
+    padding: 15px 20px;
+    z-index: 1;
+    border-radius: 5px;
+    display: none;
+    text-decoration: underline;
+}
+
+.navbar-right .dropdown p {
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.navbar-profile:hover .dropdown {
+    display: block;
 }
