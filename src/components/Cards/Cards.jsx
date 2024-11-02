@@ -1,4 +1,5 @@
 import Card from '../../assets/cards/Cards_data.js';
+import './Cards.css'
 
 function Cards() {
   return (
