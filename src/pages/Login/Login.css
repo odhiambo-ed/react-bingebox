@@ -96,6 +96,11 @@
 .form-extra {
     margin-top: 40px;
     color: #737373;
+    font-size: 13px;
+}
+
+.form-extra p {
+    padding-top: 10px;
 }
 
 .form-extra span {
@@ -103,6 +108,5 @@
     color: #fff;
     cursor: pointer;
     font-weight: 500;
+    font-size: 13px;
 }
-
-
