@@ -7,3 +7,12 @@
 .login-logo {
     width: 150px;
 }
+
+.form {
+    width: 100%;
+    max-width: 450px;
+    padding: 50px;
+    margin: auto;
+    background: rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
