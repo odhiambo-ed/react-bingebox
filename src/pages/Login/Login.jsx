@@ -1,9 +1,11 @@
 import './Login.css'
-
+import Logo from '../../assets/logo.png'
 
 function Login() {
   return (
-    <div>Login</div>
+      <div className='login'>
+          <img src={ Logo } alt="Logo" />
+    </div>
   )
 }
 
