@@ -8,7 +8,10 @@ function Footer() {
   return (
       <div className='footer'>
           <div className="footer-icons">
-            <img src="" alt="" />
+              <img src={Youtube} alt="YouTube" />
+              <img src={Facebook} alt="Facebook" />
+              <img src={Twitter} alt="Twitter" />
+              <img src={Instagram} alt="Instagram" />
           </div> 
     </div>
   )
