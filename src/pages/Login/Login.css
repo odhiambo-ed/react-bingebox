@@ -50,3 +50,8 @@
     border-color: #555;
     box-shadow: 0 0 5px #555;
 }
+
+.form input::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+}
