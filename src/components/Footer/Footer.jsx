@@ -27,7 +27,7 @@ function Footer() {
         <li>Corporate Information</li>
         <li>Contact Us</li>
       </ul>
-      <p className="copyright">&#169;1997-2024 NetFlix, Inc.</p>
+      <p className="copyright">&#169; 1997-2024 NetFlix, Inc.</p>
     </div>
   );
 }

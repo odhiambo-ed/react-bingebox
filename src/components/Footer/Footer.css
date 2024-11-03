@@ -20,4 +20,10 @@
     grid-template-columns: auto auto auto auto;
     gap: 20px;
     list-style-type: none;
+    margin-bottom: 40px;
+}
+
+.copyright {
+    color: gray;
+    font-size: 15px;
 }
