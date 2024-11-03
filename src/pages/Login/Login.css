@@ -70,4 +70,13 @@
     cursor: pointer;
     transition: background 0.3s ease;
     transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.form-help {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #b3b3b3;
+    font-size: 13px;
 }
