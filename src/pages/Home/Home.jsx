@@ -34,9 +34,10 @@ function Home() {
         </div>
       </div>
       <div className="more-cards">
-        <Card title={"Only on NetFlix"} />
-        <Card title={"Upcoming"} />
-        <Card title={"Top Pics for you"} />
+        <Card title={"Only on NetFlix"} category={now_playing} />
+        <Card title={"Top Pics for you"} category={top_rated} />
+        <Card title={"Upcoming"} category={upcoming} />
+        <Card title={"Popular"} category={popular} />
       </div>
       <Footer />
     </div>
