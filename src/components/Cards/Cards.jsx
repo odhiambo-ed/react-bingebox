@@ -1,10 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types"; // Import PropTypes
 import cards_data from "../../assets/cards/Cards_data";
 import "./Cards.css";
 
 function Cards({ title }) {
-  const cardsRef = useRef();
+    const cardsRef = useRef();
+    const [apiData, setApiData] = useState([]);
 
     const options = {
       method: "GET",
@@ -27,7 +28,7 @@ function Cards({ title }) {
         options
       )
         .then((res) => res.json())
-        .then((res) => )
+        .then((res) => setApiData(res.results))
           .catch((err) => console.error(err));
         
     cardsRef.current.addEventListener("wheel", handleWheel);
