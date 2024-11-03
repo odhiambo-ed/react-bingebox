@@ -85,4 +85,24 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    padding: 10px 0;
 }
+
+.remember input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.form-extra {
+    margin-top: 40px;
+    color: #737373;
+}
+
+.form-extra span {
+    margin-left: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
