@@ -5,6 +5,7 @@ import "./Home.css";
 import Play from "../../assets/play_icon.png";
 import Info from "../../assets/info_icon.png";
 import Card from "../../components/Cards/Cards";
+import Footer from "../../components/Footer/Footer";
 
 function Home() {
   return (
@@ -37,6 +38,7 @@ function Home() {
         <Card title={"Upcoming"} />
         <Card title={"Top Pics for you"} />
       </div>
+      <Footer />
     </div>
   );
 }
