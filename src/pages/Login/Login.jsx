@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import './Login.css'
-import Logo from '../../assets/logo.png'
+import { useState } from "react";
+import "./Login.css";
+import Logo from "../../assets/logo.png";
 
 function Login() {
-    // eslint-disable-next-line no-unused-vars
-    const [loginState, setLoginState] = useState("Sign In")
+  // eslint-disable-next-line no-unused-vars
+  const [loginState, setLoginState] = useState("Sign In");
   return (
     <div className="login">
       <img src={Logo} alt="Logo" className="login-logo" />
@@ -24,7 +24,7 @@ function Login() {
           ) : (
             <input type="password" placeholder="Confirm Password" />
           )}
-                  <button type="submit">{ loginState }</button>
+          <button type="submit">{loginState}</button>
           <div className="form-help">
             <div className="remember">
               <input type="checkbox" />
@@ -34,14 +34,32 @@ function Login() {
           </div>
         </form>
         <div className="form-extra">
-          <p>
-            New to NetFlix? <span>Sign Up Now</span>
-          </p>
+          {loginState === "Sign In" ? (
+            <p>
+              New to NetFlix?{" "}
+              <span
+                onClick={() => {
+                  setLoginState("Sign Up");
+                }}
+              >
+                Sign Up Now
+              </span>
+            </p>
+          ) : (
+            <></>
+          )}
           {loginState === "Sign In" ? (
             <></>
           ) : (
             <p>
-              Already have an account? <span>Sign In Now</span>
+              Already have an account?{" "}
+              <span
+                onClick={() => {
+                  setLoginState("Sign In");
+                }}
+              >
+                Sign In Now
+              </span>
             </p>
           )}
         </div>
@@ -50,4 +68,4 @@ function Login() {
   );
 }
 
-export default Login
+export default Login;
