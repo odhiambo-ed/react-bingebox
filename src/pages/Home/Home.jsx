@@ -34,7 +34,7 @@ function Home() {
       </div>
       <div className="more-cards">
         <Card title={"Only on NetFlix"} />
-        <Card title={"Upcomming"} />
+        <Card title={"Upcoming"} />
         <Card title={"Top Pics for you"} />
       </div>
     </div>
