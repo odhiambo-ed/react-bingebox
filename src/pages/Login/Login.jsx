@@ -24,7 +24,7 @@ function Login() {
           ) : (
             <input type="password" placeholder="Confirm Password" />
           )}
-          <button type="submit">Sign Up</button>
+                  <button type="submit">{ loginState }</button>
           <div className="form-help">
             <div className="remember">
               <input type="checkbox" />
