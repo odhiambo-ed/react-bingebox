@@ -14,3 +14,10 @@
     width: 25px;
     cursor: pointer;
 }
+
+.footer ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    list-style-type: none;
+}
