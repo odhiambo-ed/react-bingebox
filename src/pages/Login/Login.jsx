@@ -37,9 +37,13 @@ function Login() {
           <p>
             New to NetFlix? <span>Sign Up Now</span>
           </p>
-          <p>
-            Already have an account? <span>Sign In Now</span>
-          </p>
+          {loginState === "Sign In" ? (
+            <></>
+          ) : (
+            <p>
+              Already have an account? <span>Sign In Now</span>
+            </p>
+          )}
         </div>
       </div>
     </div>
