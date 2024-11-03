@@ -4,7 +4,7 @@ import Logo from '../../assets/logo.png'
 function Login() {
   return (
     <div className="login">
-      <img src={Logo} alt="Logo" />
+      <img src={Logo} alt="Logo" className='login-logo' />
       <div className="form">
         <h2>Sign Up</h2>
         <form>
