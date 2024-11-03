@@ -42,3 +42,11 @@
     transition: box-shadow 0.3s ease;
     box-shadow: none;
 }
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus {
+    background: #555;
+    color: white;
+    border-color: #555;
+    box-shadow: 0 0 5px #555;
+}
