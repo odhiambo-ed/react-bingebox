@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types"; // Import PropTypes
 import "./Cards.css";
 
-function Cards({ title }) {
+function Cards({ title, category }) {
     const cardsRef = useRef();
     const [apiData, setApiData] = useState([]);
 
@@ -23,12 +23,14 @@ function Cards({ title }) {
 
     useEffect(() => {
       fetch(
-        "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1",
+        `https://api.themoviedb.org/3/movie/${
+          category ? category : "now_playing"
+        }?language=en-US&page=1`,
         options
       )
         .then((res) => res.json())
         .then((res) => setApiData(res.results))
-          .catch((err) => console.error(err));
+        .catch((err) => console.error(err));
         
     cardsRef.current.addEventListener("wheel", handleWheel);
   }, []);
@@ -56,6 +58,7 @@ function Cards({ title }) {
 // Add PropTypes validation
 Cards.propTypes = {
   title: PropTypes.string,
+  category: PropTypes.string,
 };
 
 export default Cards;
