@@ -13,6 +13,23 @@ function Footer() {
               <img src={Twitter} alt="Twitter" />
               <img src={Instagram} alt="Instagram" />
           </div> 
+          <ul>
+              <li>Audio Description</li>
+              <li>Help Centre</li>
+              <li>Gift Cards</li>
+              <li>Media Centre</li>
+              <li>Investor Relations</li>
+              <li>Jobs</li>
+              <li>Terms of Use</li>
+              <li>Privacy</li>
+              <li>Legal Notices</li>
+              <li>Cookie Preferences</li>
+              <li>Corporate Information</li>
+              <li>Contact Us</li>
+          </ul>
+          <p className="copyright">
+              1997-2024 NetFlix, Inc.
+          </p>
     </div>
   )
 }
