@@ -3,6 +3,7 @@ import './Login.css'
 import Logo from '../../assets/logo.png'
 
 function Login() {
+    // eslint-disable-next-line no-unused-vars
     const [loginState, setLoginState] = useState("Sign In")
   return (
     <div className="login">
