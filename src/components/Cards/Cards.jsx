@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types"; // Import PropTypes
-import cards_data from "../../assets/cards/Cards_data";
 import "./Cards.css";
 
 function Cards({ title }) {
@@ -38,11 +37,14 @@ function Cards({ title }) {
     <div className="cards">
       <h2>{title ? title : "Popular on NetFlix"}</h2>
       <div className="card-list" ref={cardsRef}>
-        {cards_data.map((card, index) => {
+        {apiData.map((card, index) => {
           return (
             <div key={index} className="single-card">
-              <img src={card.image} alt={card.name} />
-              <p>{card.name}</p>
+              <img
+                src={`https://image.tmdb.org/t/p/w500` + card.poster_path}
+                alt={card.title}
+              />
+              <p>{card.title}</p>
             </div>
           );
         })}
