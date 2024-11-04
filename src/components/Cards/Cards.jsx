@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types"; // Import PropTypes
 import "./Cards.css";
+import { Link } from "react-router-dom";
 
 function Cards({ title, category }) {
     const cardsRef = useRef();
@@ -41,13 +42,13 @@ function Cards({ title, category }) {
       <div className="card-list" ref={cardsRef}>
         {apiData.map((card, index) => {
           return (
-            <div key={index} className="single-card">
+            <Link to={`/play/${card.id}`} key={index} className="single-card">
               <img
                 src={`https://image.tmdb.org/t/p/w500` + card.poster_path}
                 alt={card.title}
               />
               {/* <p>{card.title}</p> */}
-            </div>
+            </Link>
           );
         })}
       </div>
