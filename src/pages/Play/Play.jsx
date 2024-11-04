@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 
 
 function Play() {
-    const {id} = useParams();
+    const { id } = useParams();
     const [apiData, setApiData] = useState([
       {
         name: "",
@@ -31,7 +31,7 @@ function Play() {
             .then((res) => res.json())
             .then((res) => setApiData(res.results[0]))
             .catch((err) => console.error(err));
-    }, []);
+    }, [id]);
   return (
     <div className="player">
       <img src={Arrow} alt="Arrow" />
