@@ -4,8 +4,18 @@ import BellIcon from '../../assets/bell_icon.svg';
 import ProfileImg from '../../assets/profile_img.png';
 import CaretIcon from '../../assets/caret_icon.svg';
 import './Navbar.css';
+import { useRef, useEffect } from 'react';
 
 function Navbar() {
+    const navRef = useRef();
+
+    useEffect(() => { 
+        if (window.scrollY >= 80) {
+            navRef.current.classList.add('dark-nav');
+        } else { 
+            navRef.current.classList.remove('dark-nav');
+        }
+    }, [])
   return (
       <div className="navbar">
           <div className="navbar-left">
