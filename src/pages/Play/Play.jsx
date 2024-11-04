@@ -42,7 +42,7 @@ function Play() {
         allowFullScreen="true"
       ></iframe>
       <div className="player-info">
-        <p>{apiData.published_at}</p>
+        <p>{apiData.published_at.slice(0,10)}</p>
         <p>{apiData.name}</p>
         <p>{apiData.type}</p>
       </div>
