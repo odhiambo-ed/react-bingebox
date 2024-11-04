@@ -10,14 +10,16 @@ function Navbar() {
     const navRef = useRef();
 
     useEffect(() => { 
-        if (window.scrollY >= 80) {
-            navRef.current.classList.add('dark-nav');
-        } else { 
-            navRef.current.classList.remove('dark-nav');
-        }
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 80) {
+              navRef.current.classList.add("dark-nav");
+            } else {
+              navRef.current.classList.remove("dark-nav");
+            }
+        })
     }, [])
   return (
-      <div className="navbar">
+      <div ref={navRef} className="navbar">
           <div className="navbar-left">
               <img src={Logo} alt="Logo" />
               <ul>
