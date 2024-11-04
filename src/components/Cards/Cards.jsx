@@ -46,7 +46,7 @@ function Cards({ title, category }) {
                 src={`https://image.tmdb.org/t/p/w500` + card.poster_path}
                 alt={card.title}
               />
-              <p>{card.title}</p>
+              {/* <p>{card.title}</p> */}
             </div>
           );
         })}
