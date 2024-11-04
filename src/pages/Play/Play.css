@@ -13,3 +13,8 @@
     width: 50px;
     cursor: pointer;
 }
+
+.player iframe {
+    border-radius: 10px;
+}
+
