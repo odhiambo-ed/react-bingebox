@@ -1,9 +1,11 @@
 import './Play.css'
 import Arrow from '../../assets/back_arrow_icon.png'
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 
 function Play() {
+    const {id} = useParams();
     const [apiData, setApiData] = useState([
       {
         name: "",
@@ -23,7 +25,7 @@ function Play() {
 
     useEffect(() => {
         fetch(
-          "https://api.themoviedb.org/3/movie/1034541/videos?language=en-US",
+          `https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`,
           options
         )
           .then((res) => res.json())
