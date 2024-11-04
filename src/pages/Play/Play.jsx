@@ -38,7 +38,7 @@ function Play() {
 
   return (
     <div className="player">
-      <img src={Arrow} alt="Arrow" onClick={() => {navigate(-2)}} />
+      <img src={Arrow} alt="Arrow" onClick={() => {navigate('/')}} />
       {apiData.key && (
         <iframe
           src={`https://www.youtube.com/embed/${apiData.key}`}
