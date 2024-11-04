@@ -34,10 +34,11 @@ function Play() {
     <div className="player">
       <img src={Arrow} alt="Arrow" />
       <iframe
-        src="https://www.youtube.com/embed/mzs2CP5v6bw"
+        src={`https://www.youtube.com/embed/${apiData.key}`}
         width="90%"
         height="90%"
-        title="Trailer"
+              title="Trailer"
+              frameBorder="0"
         allowFullScreen="true"
       ></iframe>
       <div className="player-info">
