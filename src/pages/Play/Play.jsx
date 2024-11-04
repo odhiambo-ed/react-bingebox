@@ -25,13 +25,13 @@ function Play() {
 
     useEffect(() => {
         fetch(
-          `https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`,
-          options
+            `https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`,
+            options
         )
-          .then((res) => res.json())
-          .then((res) => setApiData(res.results[0]))
-          .catch((err) => console.error(err));
-    }, [])
+            .then((res) => res.json())
+            .then((res) => setApiData(res.results[0]))
+            .catch((err) => console.error(err));
+    }, []);
   return (
     <div className="player">
       <img src={Arrow} alt="Arrow" />
