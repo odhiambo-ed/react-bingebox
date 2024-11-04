@@ -8,7 +8,7 @@ function Play() {
       <img src={Arrow} alt="Arrow" />
       <iframe
         src="https://www.youtube.com/embed/mzs2CP5v6bw" width="90%" height="90%"
-        frameborder="0" title='Trailer' allowFullScreen="true"
+        title='Trailer' allowFullScreen="true"
           ></iframe>
           <div className="player-info">
               <p>Published Date</p>
