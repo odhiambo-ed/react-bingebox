@@ -1,10 +1,11 @@
 import "./Play.css";
 import Arrow from "../../assets/back_arrow_icon.png";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function Play() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [apiData, setApiData] = useState({
     key: "",
     name: "",
@@ -37,7 +38,7 @@ function Play() {
 
   return (
     <div className="player">
-      <img src={Arrow} alt="Arrow" />
+      <img src={Arrow} alt="Arrow" onClick={() => {navigate(-2)}} />
       {apiData.key && (
         <iframe
           src={`https://www.youtube.com/embed/${apiData.key}`}
