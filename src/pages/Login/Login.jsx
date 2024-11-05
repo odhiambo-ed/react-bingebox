@@ -15,7 +15,7 @@ function Login() {
       if (loginState === "Sign In") {
         await signin(email, password);
       } else {
-        await signup(email, password, name);
+        await signup(name, email, password);
       }
     } catch (error) {
       console.error("Authentication error:", error);
