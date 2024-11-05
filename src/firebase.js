@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
+import { toast } from "react-toastify";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -30,8 +31,9 @@ const signup = async (name, email, password) => {
             email,
         });
     } catch (error) {
-        console.error("Signup error:", error);
-        alert(error.message); // Use error.message for a more descriptive alert
+        // console.error("Signup error:", error);
+        // alert(error.message); // Use error.message for a more descriptive alert
+        toast.error(error.message);
     }
 }
 
@@ -39,15 +41,17 @@ const signin = async (email, password) => {
     try {
         await signInWithEmailAndPassword(auth, email, password); // Await the call
     } catch (error) {
-        console.error("Signin error:", error);
-        alert(error.message);
+        // console.error("Signin error:", error);
+        // alert(error.message);
+        toast.error(error.message);
     }
 }
 
 const logout = () => {
     signOut(auth).catch(error => {
-        console.error("Logout error:", error);
-        alert(error.message);
+        // console.error("Logout error:", error);
+        // alert(error.message);
+        toast.error(error.message);
     });
 }
 
