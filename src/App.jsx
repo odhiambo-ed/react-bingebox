@@ -4,7 +4,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom'
 import Login from './pages/Login/Login'
 import Play from './pages/Play/Play'
 import { onAuthStateChanged } from 'firebase/auth'
-import { useEffect, useNavigate } from 'react'
+import { useEffect } from 'react'
 import { auth } from './firebase'
 
 
