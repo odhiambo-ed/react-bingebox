@@ -11,12 +11,17 @@ function Login() {
 
   const user_auth = async (e) => {
     e.preventDefault();
-    if (loginState == "Sign In") {
-      await signin(email, password);
-    } else {
-      await signup(email, password, name);
+    try {
+      if (loginState === "Sign In") {
+        await signin(email, password);
+      } else {
+        await signup(email, password, name);
+      }
+    } catch (error) {
+      console.error("Authentication error:", error);
     }
-  }
+  };
+
 
   return (
     <div className="login">
