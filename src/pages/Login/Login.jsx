@@ -46,7 +46,7 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="submit">{loginState}</button>
+          <button onClick={user_auth} type="submit">{loginState}</button>
           <div className="form-help">
             <div className="remember">
               <input type="checkbox" />
