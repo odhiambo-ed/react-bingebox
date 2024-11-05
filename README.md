@@ -1,6 +1,16 @@
-# React Bingebox
+## Sneak Peek
 
-React Bingebox is a Netflix-inspired web application built using React, Firebase, and The Movie Database (TMDb) API. It allows users to browse and watch trailers of popular movies and TV shows.
+![Preview](bingebox.gif)
+
+# React Bingebox - NetFlix Clone
+
+## Description
+
+> React Bingebox is a Netflix-inspired web application built using React, Firebase, and The Movie Database (TMDb) API. It allows users to browse and watch trailers of popular movies and TV shows.
+
+## Live Demo Link
+
+[Project Live Link](https://react-secure-pass-41ipyvj3i-white3ds-projects.vercel.app)
 
 ## Features
 
@@ -18,73 +28,61 @@ React Bingebox is a Netflix-inspired web application built using React, Firebase
 - **React Router**: For handling navigation within the app.
 - **CSS Modules**: For styling components with scoped CSS.
 
-## Getting Started
+## Built With
 
-### Prerequisites
+![HTML5](https://icongr.am/devicon/html5-original.svg?size=80&color=currentColor)
+![CSS3](https://icongr.am/devicon/css3-original.svg?size=80&color=currentColor)
+![Bootsrap](https://icongr.am/devicon/bootstrap-plain.svg?size=80&color=3908e7)
+![JavaScript](https://icongr.am/devicon/javascript-plain.svg?size=80&color=3908e7)
 
-- Node.js and npm installed on your machine.
-- A Firebase project set up with authentication enabled.
-- TMDb API key.
+## Get Started
 
-### Installation
+### Run
 
-1. Clone the repository:
+```
+To get a clone of the project, run `https://github.com/odhiambo-ed/react-bingebox.git`
+```
 
-   ```bash
-   git clone https://github.com/yourusername/react-bingebox.git
-   cd react-bingebox
-   ```
+```
+cd /react-bingebox
+```
 
-2. Install dependencies:
+```
+npm install
+```
 
-   ```bash
-   npm install
-   ```
+```
+npm run dev
+```
 
-3. Set up environment variables:
 
-   Create a `.env` file in the root directory and add your Firebase and TMDb API keys:
 
-   ```plaintext
-   REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
-   REACT_APP_TMDB_API_KEY=your_tmdb_api_key
-   ```
+## Author(s)
 
-4. Start the development server:
+  <a href="https://github.com/odhiambo-ed" target="blank"><img align="center"
+        src="https://github.com/white3d/GitHub-User-Content/blob/main/Passport_Ed-M.png"
+        alt="Edward" height="80" width="80"/></a>   **Edward Odhiambo**
 
-   ```bash
-   npm start
-   ```
+- GitHub: [@whit3d](https://github.com/odhiambo-ed)
+- Twitter: [@odhiambo_ed](https://twitter.com/odhiambo_ed)
+- LinkedIn: [Edward Odhiambo](https://www.linkedin.com/in/edward-odhiambo/)
+- Portfolio: [Edward Odhiambo](https://edwardodhiambo.com/)
 
-   The app will be available at `http://localhost:3000`.
+## 🤝 Contributing
 
-## Usage
+Contributions, issues, and feature requests are welcome!!!
 
-- **Sign Up/Sign In**: Create an account or log in to access the app.
-- **Browse Content**: Explore different categories like "Now Playing", "Top Rated", "Upcoming", and "Popular".
-- **Watch Trailers**: Click on a movie or TV show to watch its trailer.
+Feel free to check the [issues page]https://github.com/odhiambo-ed/react-bingebox/issues)
 
-## Project Structure
+## Show your support
 
-- `src/components`: Contains reusable components like Navbar, Footer, and Cards.
-- `src/pages`: Contains main pages like Home, Login, and Play.
-- `src/assets`: Contains images and other static assets.
-- `src/firebase.js`: Firebase configuration and authentication functions.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [The Movie Database (TMDb)](https://www.themoviedb.org/) for providing movie and TV show data.
-- [Firebase](https://firebase.google.com/) for backend services.
-- [React](https://reactjs.org/) for the frontend framework.
+- Hat tip to anyone whose code was used
+- Special thanks to [React](https://react.dev/) for the amazing vanilla JavaScript framework project. I am grateful for your talent and generosity in sharing your work with the community.
 
-## Contact
+## 📝 License
 
-For any questions or feedback, please contact [yourname@example.com](mailto:yourname@example.com).
+This project is [MIT](https://github.com/white3d/GitHub-User-Content/blob/main/LICENSE) licensed.
