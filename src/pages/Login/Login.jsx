@@ -8,6 +8,14 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const user_auth = async (e) => {
+    e.preventDefault();
+    if (loginState == "Sign In") {
+      await signin(email, password);
+    } else {
+      await signup(email, password, name);
+    }
+  }
 
   return (
     <div className="login">
