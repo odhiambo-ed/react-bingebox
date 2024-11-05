@@ -3,8 +3,12 @@ import "./Login.css";
 import Logo from "../../assets/logo.png";
 
 function Login() {
-  // eslint-disable-next-line no-unused-vars
   const [loginState, setLoginState] = useState("Sign In");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+
   return (
     <div className="login">
       <img src={Logo} alt="Logo" className="login-logo" />
@@ -14,16 +18,10 @@ function Login() {
           {loginState === "Sign In" ? (
             <></>
           ) : (
-            <input type="text" placeholder="Your Name" />
+            <input type="text" value={name} placeholder="Your Name" onChange={(e) => e.target.value} />
           )}
-          <input type="text" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-
-          {loginState === "Sign In" ? (
-            <></>
-          ) : (
-            <input type="password" placeholder="Confirm Password" />
-          )}
+          <input type="text" placeholder="Email" value={email} onChange={(e) => e.target.value} />
+          <input type="password" placeholder="Password" value={password} onChange={(e) => e.target.value} />
           <button type="submit">{loginState}</button>
           <div className="form-help">
             <div className="remember">
