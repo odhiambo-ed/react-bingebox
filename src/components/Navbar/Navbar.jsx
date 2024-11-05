@@ -5,6 +5,7 @@ import ProfileImg from '../../assets/profile_img.png';
 import CaretIcon from '../../assets/caret_icon.svg';
 import './Navbar.css';
 import { useRef, useEffect } from 'react';
+import { logout } from '../../firebase';
 
 function Navbar() {
     const navRef = useRef();
@@ -39,7 +40,7 @@ function Navbar() {
                   <img src={ProfileImg} alt="Profile Icon" className='profile' />
                   <img src={CaretIcon} alt="Caret" />
                   <div className="dropdown">
-                      <p>Sign Out of NetFlix</p>
+                      <p onClick={() => {logout()}}>Sign Out of NetFlix</p>
                   </div>
               </div>
           </div>
