@@ -27,10 +27,25 @@ function Login() {
           {loginState === "Sign In" ? (
             <></>
           ) : (
-            <input type="text" value={name} placeholder="Your Name" onChange={(e) => e.target.value} />
+            <input
+              type="text"
+              value={name}
+              placeholder="Your Name"
+              onChange={(e) => setName(e.target.value)}
+            />
           )}
-          <input type="text" placeholder="Email" value={email} onChange={(e) => e.target.value} />
-          <input type="password" placeholder="Password" value={password} onChange={(e) => e.target.value} />
+          <input
+            type="text"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
           <button type="submit">{loginState}</button>
           <div className="form-help">
             <div className="remember">
