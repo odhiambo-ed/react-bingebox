@@ -2,9 +2,8 @@
 import { initializeApp } from "firebase/app";
 import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
-// import { getAnalytics } from "firebase/analytics";
-// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyD4d6hCkTULeevALmMVKLNLJonfQS-nbLo",
     authDomain: "netflix-clone-4c59b.firebaseapp.com",
@@ -17,37 +16,39 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-const signup = async (name, email, password) => { 
+const signup = async (name, email, password) => {
     try {
-        const res = await createUserWithEmailAndPassword(auth, email, password)
-        const user = res.user
-        await addDoc(collection(db, "user"), {
+        const res = await createUserWithEmailAndPassword(auth, email, password);
+        const user = res.user;
+        await addDoc(collection(db, "users"), { // Ensure collection name is correct
             uid: user.uid,
             name,
             authProvider: "local",
             email,
-        })
+        });
     } catch (error) {
-        console.log(error)
-        alert(error)
+        console.error("Signup error:", error);
+        alert(error.message); // Use error.message for a more descriptive alert
     }
 }
 
-const signin = async (email, password) => { 
+const signin = async (email, password) => {
     try {
-        signInWithEmailAndPassword(auth, email, password)
+        await signInWithEmailAndPassword(auth, email, password); // Await the call
     } catch (error) {
-        console.log(error)
-        alert(error)
+        console.error("Signin error:", error);
+        alert(error.message);
     }
 }
 
 const logout = () => {
-    signOut(auth)
+    signOut(auth).catch(error => {
+        console.error("Logout error:", error);
+        alert(error.message);
+    });
 }
 
-export { signup, signin, logout, auth, db}
+export { signup, signin, logout, auth, db };
