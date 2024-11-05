@@ -10,7 +10,7 @@
 
 ## Live Demo Link
 
-[Project Live Link](https://react-secure-pass-41ipyvj3i-white3ds-projects.vercel.app)
+[Project Live Link](https://react-bingebox-7xo220tdo-white3ds-projects.vercel.app)
 
 ## Features
 
