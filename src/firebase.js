@@ -33,7 +33,7 @@ const signup = async (name, email, password) => {
     } catch (error) {
         // console.error("Signup error:", error);
         // alert(error.message); // Use error.message for a more descriptive alert
-        toast.error(error.message);
+        toast.error(error.code.split("/")[1].split("-").join(" "));
     }
 }
 
@@ -43,7 +43,7 @@ const signin = async (email, password) => {
     } catch (error) {
         // console.error("Signin error:", error);
         // alert(error.message);
-        toast.error(error.message);
+        toast.error(error.code.split("/")[1].split("-").join(" "));
     }
 }
 
@@ -51,7 +51,7 @@ const logout = () => {
     signOut(auth).catch(error => {
         // console.error("Logout error:", error);
         // alert(error.message);
-        toast.error(error.message);
+        toast.error(error.code.split("/")[1].split("-").join(" "));
     });
 }
 
